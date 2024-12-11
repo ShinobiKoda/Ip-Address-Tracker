@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mobile-header-img {
+  background-image: url(./assets/public/pattern-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desktop-header-img {
+  background-image: url(./assets/public/pattern-bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .desktop-header-img {
+    display: block;
+  }
+
+  .mobile-header-img {
+    display: none;
+  }
+}
